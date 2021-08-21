@@ -17,10 +17,11 @@ const config = {
       inject: false,
       name: "Budget Tracker",
       short_name: "BudgetTracker",
-      description: "An application to track your budget",
+      description: "An application to track your apps",
       background_color: "#c0392b",
       theme_color: "#34495e",
       start_url: "/",
+      display: "standalone",
       icons: [{
         src: path.resolve("public/icons/icon-192x192.png"),
         sizes: [192, 512],
