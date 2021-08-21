@@ -2,27 +2,28 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
-  mode: "development",
+  mode: "production",
 
   // add entry points for JavaScript files for the three pages, home, detail, and favorites.
-  entry: "./public/assets/js/app.js",
+  entry: "./public/index.js",
   output: {
     path: __dirname + "/public/dist",
     filename: "bundle.js"
   },
   plugins: [
     new WebpackPwaManifest({
+      filename: "manifest.json",
       fingerprints: false,
       inject: false,
-      name: "Images App",
-      short_name: "Images App",
-      description: "An application for images",
-      background_color: "#01579b",
-      theme_color: "#ffffff",
+      name: "Budget Tracker",
+      short_name: "BudgetTracker",
+      description: "An application to track your budget",
+      background_color: "#c0392b",
+      theme_color: "#34495e",
       start_url: "/",
       icons: [{
-        src: path.resolve("public/assets/images/icons/icon-192x192.png"),
-        sizes: [96, 128, 192, 256, 384, 512],
+        src: path.resolve("public/icons/icon-192x192.png"),
+        sizes: [192, 512],
         destination: path.join("assets", "icons")
       }]
     })
