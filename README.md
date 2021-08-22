@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Live Deployment on Heroku: (https://quiet-wildwood-99872.herokuapp.com/)
+Live Deployment on Heroku -- does not work on Safari: (https://quiet-wildwood-99872.herokuapp.com/)
 
 ---
 
@@ -32,7 +32,7 @@ This app allows you to track your budget transactions, and use the application w
 - Babel
 
 ## Installation 
-it's available on my github linked below, as well as the live deployed link linked above.   
+This app available on my github linked below, as well as the live deployed link linked above.   
 
 ## Usage 
 Simply add your transactions, and the application does the rest.
